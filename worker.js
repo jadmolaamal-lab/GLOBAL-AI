@@ -42,7 +42,7 @@ export default {
               "Content-Type": "application/json"
             },
             body: JSON.stringify({
-              model: env.GROQ_MODEL || "llama-3.3-70b-versatile",
+              model: env.GROQ_MODEL || "qwen/qwen3.8-27b",
               messages,
               temperature: 0.7,
               max_completion_tokens: 1200
