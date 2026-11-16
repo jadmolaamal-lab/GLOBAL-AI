@@ -1,0 +1,9 @@
+{
+  "name": "GLOBAL AI",
+  "short_name": "GLOBAL AI",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080b1b",
+  "theme_color": "#080b1b",
+  "description": "مساعدك الذكي"
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b1b">
+  <title>GLOBAL AI</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">G</div><div><b>GLOBAL AI</b><small>مساعدك الذكي</small></div></div>
+      <button class="new-chat" id="newChat">＋ محادثة جديدة</button>
+      <div class="side-label">القائمة</div>
+      <button class="side-item active">◈　المحادثة</button>
+      <button class="side-item" id="aboutBtn">ⓘ　حول التطبيق</button>
+      <div class="side-bottom"><span class="status-dot"></span> الواجهة جاهزة للتطوير</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="القائمة">☰</button>
+        <div class="top-brand"><span class="mini-logo">G</span><b>GLOBAL AI</b></div>
+        <span class="online"><i></i> مساعدك</span>
+      </header>
+
+      <section class="chat-area" id="chatArea">
+        <div class="welcome" id="welcome">
+          <div class="orb"><span>G</span></div>
+          <p class="eyebrow">مرحباً بك في عالم الذكاء الاصطناعي</p>
+          <h1>كيف أقدر <span>نعاونك؟</span></h1>
+          <p class="welcome-sub">اسأل، تعلّم، ابتكر، وخلي GLOBAL AI يعاونك في أفكارك.</p>
+          <div class="suggestions">
+            <button class="suggestion">📚　شرح درس بطريقة سهلة</button>
+            <button class="suggestion">💡　اقترح عليّ فكرة مشروع</button>
+            <button class="suggestion">💻　ساعدني في كتابة كود</button>
+            <button class="suggestion">🌍　ترجم لي نصاً</button>
+          </div>
+        </div>
+        <div class="messages" id="messages"></div>
+      </section>
+
+      <footer class="composer-wrap">
+        <div class="composer">
+          <textarea id="prompt" rows="1" placeholder="اكتب رسالتك هنا..."></textarea>
+          <button class="send-btn" id="sendBtn" aria-label="إرسال">➤</button>
+        </div>
+        <p class="disclaimer">GLOBAL AI — قد تحتاج الإجابات إلى التحقق. نسخة البداية التجريبية.</p>
+      </footer>
+    </main>
+  </div>
+
+  <div class="modal hidden" id="modal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">×</button>
+      <div class="mini-logo big">G</div>
+      <h2>GLOBAL AI</h2>
+      <p>واجهة أولية لتطبيق مساعد ذكي بتصميم أزرق وبنفسجي نيون.</p>
+      <p class="muted">هذه النسخة تعرض واجهة المحادثة فقط. سنربطها بمحرك ذكاء اصطناعي حقيقي في الخطوة التالية، عبر خادم آمن يحمي مفتاح API.</p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
